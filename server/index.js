@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173", "https://taskmanager-ub99.onrender.com",
+  origin: ["http://localhost:5173", "https://taskmanager-ub99.onrender.com"],
   credentials: true
 }));
 
